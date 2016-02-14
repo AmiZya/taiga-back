@@ -50,6 +50,8 @@ class Task(OCCModelMixin, WatchedModelMixin, BlockedMixin, TaggedMixin, models.M
                                          verbose_name=_("modified date"))
     finished_date = models.DateTimeField(null=True, blank=True,
                                          verbose_name=_("finished date"))
+    due_date = models.DateTimeField(null=True, blank=True,
+                                         verbose_name=_("due date"))
     subject = models.TextField(null=False, blank=False,
                                verbose_name=_("subject"))
 

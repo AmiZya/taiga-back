@@ -87,6 +87,8 @@ class UserStory(OCCModelMixin, WatchedModelMixin, BlockedMixin, TaggedMixin, mod
                                          verbose_name=_("modified date"))
     finish_date = models.DateTimeField(null=True, blank=True,
                                        verbose_name=_("finish date"))
+    due_date = models.DateTimeField(null=True, blank=True,
+                                         verbose_name=_("due date"))
     subject = models.TextField(null=False, blank=False,
                                verbose_name=_("subject"))
     description = models.TextField(null=False, blank=True, verbose_name=_("description"))
